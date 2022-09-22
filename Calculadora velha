@@ -1,0 +1,84 @@
+import java.util.Scanner;
+public class ex02 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+    double soma, multiplicação, divisão, subtração, potenciação, porcentagem, raizQuadrada;
+    
+    int num;
+    int esc;
+    int cont = 0;
+    
+    System.out.println("Escolha qual calculo voce deseja e digite o codigo: \n1-Soma.\n2-multiplicação.\n3-divisão.\n4-subtração.\n5-potenciação.\n6-porcentagem.\n7-raizQuadrada. ");
+     esc =sc.nextInt();
+    
+     System.out.println("Digite a quantidade de numeros: de 1 a 5:\n");
+     int quantidade = sc.nextInt();
+     
+     switch (esc) {
+    
+    case 1:
+        for(int a =0; a<quantidade; a++) {
+            int y = sc.nextInt();
+            cont += y;
+            System.out.printf("Soma:"+(a+y));
+            break;
+        }
+    case 2:
+        for(int a =0; a<quantidade; a++) {
+            int y = sc.nextInt();
+            cont += y;
+            System.out.printf("Multiplicação:"+(a * y));
+            break;
+            }
+        
+    case 3:
+        for(int a =0; a<quantidade; a++) {
+            int y = sc.nextInt();
+            cont += y;
+            System.out.printf("Divisão:"+(a / y));
+            break;
+            }
+        
+    case 4:
+        for(int a =0; a<quantidade; a++) {
+            int y = sc.nextInt();
+            cont += y;
+            System.out.printf("Subtração:"+(a - y));
+            break;
+            }
+
+    case 5:
+        for(int a =0; a<quantidade; a++) {
+            int y = sc.nextInt();
+            cont += y;
+            System.out.printf("potenciação:"+(Math.pow(raizQuadrada, y)));
+            break;
+            }
+        
+    case 6:
+        for(int a =0; a<quantidade; a++) {
+            int y = sc.nextInt();
+            cont += y;
+            System.out.printf("Porcentagem:"+((y/100) *10));
+            break;
+        }
+        
+    case 7:
+        for(int a =0; a<quantidade; a++) {
+            int y = sc.nextInt();
+            cont += y;
+            System.out.printf("Raiz quadrada:"+(y*y));
+            break;
+        }
+    
+        default: System.out.println("número invalido ");
+
+
+    
+    }
+sc.close();
+}
+}
+
